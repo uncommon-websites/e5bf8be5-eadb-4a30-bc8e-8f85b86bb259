@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconBrain from "~icons/lucide/brain";
+	import IconSmartphone from "~icons/lucide/smartphone";
+	import IconMessageSquare from "~icons/lucide/message-square";
+	import IconHeart from "~icons/lucide/heart";
+	import IconBarChart from "~icons/lucide/bar-chart";
+	import IconTrendingUp from "~icons/lucide/trending-up";
 </script>
 
 <Hero
@@ -26,62 +34,97 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="We automate invoice collections for service businesses so you get paid faster without the awkward follow-up calls. Our AI-powered system sends smart, multi-channel reminders that feel personal and professional, helping home service contractors like HVAC owners turn their $50 billion accounts receivable into cash flow they can count on."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Marcus Rodriguez",
+			position: "Owner",
+			company: "Rodriguez HVAC Services",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We cut our average payment time from 45 days to 18 days. The automated reminders handle the awkward conversations, and I get to focus on keeping my customers comfortable instead of chasing invoices.",
+			image: "/generated/image-confident-hispanic-male-hvac-contractor-.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Jennifer Chen",
+			position: "Owner",
+			company: "Chen Plumbing & Heating",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Our cash flow improved by 60% in the first quarter. The AI knows exactly when to escalate, so we never lose money to forgotten invoices. It's like having a full-time collections specialist without the overhead.",
+			image: "/generated/image-professional-headshot-of-an-asian-female.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "David Okonkwo",
+			position: "Owner",
+			company: "Okonkwo Electric",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"I was spending 8 hours a week on payment follow-ups. Now it's automated, and my team saved over $12,000 in admin costs last year alone. The white-labeled texts keep it professional and maintain our customer relationships.",
+			image: "/generated/image-confident-black-male-electrical-contract.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Powerful automation that works for you"
+	subtitle="Everything you need to get invoices paid faster, without lifting a finger"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Smart AI reminders",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Our AI learns each customer's payment patterns and automatically sends perfectly timed follow-ups. No more guessing when to reach out or what to say.",
+			icon: IconBrain
 		},
 		{
-			title: "Data Analysis",
+			title: "Your number, your brand",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"All messages come from your business phone number, keeping your customer relationships strong while we handle the awkward collections work.",
+			icon: IconSmartphone
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Multi-channel escalation",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Start with friendly text reminders, escalate to email, then phone calls automatically. The system adjusts based on what gets results.",
+			icon: IconMessageSquare
+		},
+		{
+			title: "Relationship-aware approach",
+			description:
+				"Never damage a customer relationship again. Our tone adapts to each situation, maintaining professionalism while getting you paid.",
+			icon: IconHeart
+		},
+		{
+			title: "Real-time payment tracking",
+			description:
+				"See exactly which invoices are overdue, who's been contacted, and what's working. Simple dashboard that shows you everything at a glance.",
+			icon: IconBarChart
+		},
+		{
+			title: "Faster cash flow",
+			description:
+				"Service businesses using our platform get paid 40% faster on average. That's money back in your pocket to grow your business.",
+			icon: IconTrendingUp
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction 
+	title="Stop chasing invoices"
+	subtitle="Start getting paid on time"
+	description="Join hundreds of service businesses that have cut their payment cycles by 40%. Set up automated collections in minutes, no credit card required to start your free trial."
+	imageSrc="/generated/image-a-cheerful-hvac-contractor-sitting-in-th.webp"
+	callsToAction={[
+		{
+			href: "/get-started",
+			label: "Start free trial",
+			variant: "primary"
+		},
+		{
+			href: "/contact",
+			label: "Book a demo",
+			variant: "secondary"
+		}
+	]}
+/>
