@@ -10,12 +10,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	title="Get paid faster, without the awkward chase"
+	subtitle="AI-powered collections that automate follow-ups, so you can focus on the work you love while invoices get paid on time."
+	imageSrc="/generated/image-a-friendly-hvac-contractor-with-a-warm-s.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by service professionals"
+	logoUrls={[
+		'https://cdn.brandfetch.io/servicetitan.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/getjobber.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/housecallpro.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/buildops.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
